@@ -12,7 +12,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+//Route::group(['prefix' => LaravelLocalization::setLocale()], function(){
+    Route::get('testLayout', function () {
+        return view('layouts.admin');
+//    });
 
-Route::get('/', function () {
-    return view('welcome');
 });
